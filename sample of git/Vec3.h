@@ -22,6 +22,7 @@
 #pragma once
 
 #include "ChiliMath.h"
+#include"Vec2.h"
 
 template <typename T>
 class _Vec3 : public _Vec2<T>
@@ -30,7 +31,9 @@ public:
 	_Vec3() {}
 	_Vec3(T x, T y, T z)
 		:
-		_Vec2(x, y),
+		//_Vec2(x, y),
+		x(x),
+		y(y),
 		z(z)
 	{}
 	_Vec3(const _Vec3& vect)
@@ -132,6 +135,8 @@ public:
 		return !(*this == rhs);
 	}
 public:
+	T x;
+	T y;
 	T z;
 };
 
