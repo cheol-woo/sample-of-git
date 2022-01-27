@@ -115,4 +115,8 @@
     <FxCompile Include="FramebufferPS.hlsl" />
     <FxCompile Include="FramebufferVS.hlsl" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="FramebufferPS.shh" />
+    <None Include="FramebufferVS.shh" />
+  </ItemGroup>
 </Project>
